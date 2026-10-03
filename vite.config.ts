@@ -6,6 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
+    base: '/riviera-vtc/',
     plugins: [
       react(),
       tailwindcss(),
@@ -13,7 +14,7 @@ export default defineConfig(() => {
         registerType: 'autoUpdate',
         includeAssets: ['apple-touch-icon.png', 'icon.svg', 'pwa-192x192.png', 'pwa-512x512.png'],
         manifest: {
-          id: '/',
+          id: '/riviera-vtc/',
           name: 'RIVIERA VTC – Gestion des réservations',
           short_name: 'Riviera VTC',
           description: 'Application web mobile professionnelle pour chauffeurs VTC : gestion des courses, bons de commande conformes et profils entreprise.',
@@ -21,24 +22,24 @@ export default defineConfig(() => {
           background_color: '#ffffff',
           display: 'standalone',
           orientation: 'portrait',
-          start_url: '/',
-          scope: '/',
+          start_url: '/riviera-vtc/',
+          scope: '/riviera-vtc/',
           lang: 'fr',
           icons: [
             {
-              src: '/pwa-192x192.png',
+              src: 'pwa-192x192.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/pwa-512x512.png',
+              src: 'pwa-512x512.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/pwa-maskable-512x512.png',
+              src: 'pwa-maskable-512x512.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'maskable',
