@@ -1,0 +1,8 @@
+{
+  "name": "RIVIERA VTC – Gestion des réservations",
+  "description": "Application web mobile professionnelle pour chauffeurs VTC : gestion des courses, bons de commande conformes et profils entreprise.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
